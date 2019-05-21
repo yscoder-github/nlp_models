@@ -8,9 +8,6 @@ __author__ = 'yscoder@foxmail.com'
 def layer_norm(inputs, epsilon=1e-8):
     """
     层正则化,以避免出现梯度爆炸或者弥散
-    :param inputs:
-    :param epsilon:
-    :return:
     """
     mean, variance = tf.nn.moments(inputs, [-1], keep_dims=True)
     normalized = (inputs - mean) / (tf.sqrt(variance + epsilon))
