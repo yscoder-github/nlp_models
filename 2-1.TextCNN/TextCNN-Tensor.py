@@ -26,7 +26,6 @@ vocab_size = len(word_dict)  # 词汇表
 inputs = []
 for sen in sentences:
     # replace the word with  corresponding id (one-hot representation)
-    # 输入是将句子集合中的每个句子id化,作为训练数据集
     inputs.append(np.asarray([word_dict[n] for n in sen.split()]))
 
 

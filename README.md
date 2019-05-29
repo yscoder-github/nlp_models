@@ -1,8 +1,19 @@
-## nlp-tutorial
+## nlp-models 
+<p align="center"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" />  <img width="100" src="https://avatars1.githubusercontent.com/u/26200681?s=400&u=678028f046e903873ea38f04d23a397dc0d475d8&v=4" /></p>
 
-<p align="center"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" />  <img width="100" src="https://media-thumbs.golden.com/OLqzmrmwAzY1P7Sl29k2T9WjJdM=/200x200/smart/golden-storage-production.s3.amazonaws.com/topic_images/e08914afa10a4179893eeb07cb5e4713.png" /></p>
 
-`nlp-tutorial` is a tutorial for who is studying NLP(Natural Language Processing) using **TensorFlow** and **Pytorch**. Most of the models in NLP were implemented with less than **100 lines** of code.(except comments or blank lines)
+This [nlp-models](https://github.com/yscoder-github/nlp-models) project  is modified on existing repositorie [nlp-tutorial](https://github.com/graykode/nlp-tutorial), which is a tutorial for who is studying NLP(Natural Language Processing) using **TensorFlow** , **Pytorch** and **keras** ,Most of the models in NLP were implemented with less than **100 lines** of code.(except comments or blank lines)base on this repositorie, The following things have been done
+
+1. Add some new Model 
+
+2. Add keras version 
+
+3. Adding more English annotations
+
+4. Enriching training examples
+
+5. Adding larger data sets to measure model effectiveness
+
 
 
 
@@ -76,12 +87,12 @@
 - Python 3.5+
 - Tensorflow 1.12.0+
 - Pytorch 0.4.1+
-- Plan to add Keras Version
+- Plan to add Keras Version   **TO DO**  
 
 
 
 ## Author
 
-- Tae Hwan Jung(Jeff Jung) @graykode
-- Author Email : nlkey2022@gmail.com
-- Acknowledgements to [mojitok](http://mojitok.com/) as NLP Research Internship.
+- yinshuai 
+- Author Email : yscoder@foxmail.com 
+- Acknowledgements to my colleagues and friends
