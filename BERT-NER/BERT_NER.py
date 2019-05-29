@@ -185,7 +185,7 @@ class DataProcessor(object):
     def _read_data(cls,input_file):
         """Read a BIO data!"""
         rf = open(input_file,'r')
-        lines = [];words = [];labels = []
+        lines, words, labels = [], [], []
         for line in rf:
             word = line.strip().split(' ')[0]
             label = line.strip().split(' ')[-1]
@@ -255,13 +255,13 @@ def convert_single_example(ex_index, example, label_list, max_seq_length, tokeni
     #here start with zero this means that "[PAD]" is zero
     for (i,label) in enumerate(label_list):
         label_map[label] = i
-    with open(FLAGS.middle_output+"/label2id.pkl",'wb') as w:
-        pickle.dump(label_map,w)
+    with open(FLAGS.middle_output + "/label2id.pkl",'wb') as w:
+        pickle.dump(label_map ,w)
     textlist = example.text.split(' ')
     labellist = example.label.split(' ')
     tokens = []
     labels = []
-    for i,(word,label) in enumerate(zip(textlist,labellist)):
+    for i,(word,label) in enumerate(zip(textlist, labellist)):
         token = tokenizer.tokenize(word)
         tokens.extend(token)
         for i,_ in enumerate(token):

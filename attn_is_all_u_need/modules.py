@@ -113,7 +113,7 @@ def pointwise_feedforward(inputs, num_units=[None, None], activation=None):
 
 def learned_position_encoding(inputs, mask, embed_dim):
     """
-    @author:yinshuai 位置嵌入
+    位置嵌入
     :param inputs:
     :param mask:
     :param embed_dim:
