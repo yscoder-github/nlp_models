@@ -74,6 +74,8 @@ with tf.Session() as sess:
     init = tf.global_variables_initializer()
     sess.run(init)
 
+
+
     for epoch in range(5000):
         batch_inputs, batch_labels = random_batch(skip_grams, batch_size)
         _, loss = sess.run([optimizer, cost], feed_dict={inputs: batch_inputs, labels: batch_labels})

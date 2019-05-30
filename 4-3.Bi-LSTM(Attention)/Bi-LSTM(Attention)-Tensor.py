@@ -24,7 +24,7 @@ labels = [1, 1, 1, 0, 0, 0]  # 1 is good, 0 is not good.
 word_list = " ".join(sentences).split()
 word_list = list(set(word_list))
 word_dict = {w: i for i, w in enumerate(word_list)}
-vocab_size = len(word_dict)  # 词汇表
+vocab_size = len(word_dict) 
 
 input_batch = []
 for sen in sentences:
@@ -89,8 +89,6 @@ with tf.Session() as sess:
 
     for epoch in range(5000):
 
-
-        
 
         # ys start: to see the param is changed over the epoch 
         input = sess.run(input, feed_dict={X: input_batch})

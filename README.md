@@ -1,10 +1,13 @@
 ## nlp-models 
-<p align="center"><img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" />  <img width="100" src="https://avatars1.githubusercontent.com/u/26200681?s=400&u=678028f046e903873ea38f04d23a397dc0d475d8&v=4" /></p>
+<p align="center">
+<img width="100" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559145755227&di=eac73643be2de89cc8d0b8d03e79c4f2&imgtype=0&src=http%3A%2F%2Fimg.91jm.com%2F2016%2F08%2F1565A358901.jpg" />
+<img width="100" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/TensorFlowLogo.svg/225px-TensorFlowLogo.svg.png" />  <img width="100" src="https://avatars1.githubusercontent.com/u/26200681?s=400&u=678028f046e903873ea38f04d23a397dc0d475d8&v=4" /></p>
 
 
-This [nlp-models](https://github.com/yscoder-github/nlp-models) project  is modified on existing repositorie [nlp-tutorial](https://github.com/graykode/nlp-tutorial), which is a tutorial for who is studying NLP(Natural Language Processing) using **TensorFlow** , **Pytorch** and **keras** ,Most of the models in NLP were implemented with less than **100 lines** of code.(except comments or blank lines)base on this repositorie, The following things have been done
+This [nlp-models](https://github.com/yscoder-github/nlp-models) project  is modified on existing repositorie [nlp-tutorial](https://github.com/graykode/nlp-tutorial), which is a tutorial for who is studying NLP(Natural Language Processing) using **TensorFlow** , **Pytorch** and **keras** ,Most of the models in NLP were implemented with less than **100 lines** of code.(except comments or blank lines)base on this repositorie. 
 
-1. Add some new Model 
+To do: 
+1. Add some new  model 
 
 2. Add keras version 
 

@@ -27,10 +27,7 @@ n_hidden = 2  # number of hidden units
 
 def make_batch(sentences):
     """
-    @author: yinshuai
-    创建训练所需的批次数据
-    :param sentences:
-    :return:
+    create batch data from sentences (list)
     """
     input_batch = []
     target_batch = []
@@ -38,12 +35,14 @@ def make_batch(sentences):
     for sen in sentences:
         word = sen.split()
         input = [word_dict[n] for n in word[:-1]]  # word_dict is word: index
+        print(input)
         target = word_dict[word[-1]]
 
         input_batch.append(np.eye(n_class)[input]) # one-hot
         target_batch.append(np.eye(n_class)[target])# one -hot
 
     return input_batch, target_batch
+
 
 
 # Model -- the input is one-hot
@@ -67,8 +66,10 @@ prediction = tf.argmax(model, 1)
 init = tf.global_variables_initializer()
 sess = tf.Session()
 sess.run(init)
-
+        
 input_batch, target_batch = make_batch(sentences)
+
+print(input_batch)
 
 for epoch in range(5000):
     _, loss = sess.run([optimizer, cost], feed_dict={X: input_batch, Y: target_batch})
@@ -81,3 +82,18 @@ predict = sess.run([prediction], feed_dict={X: input_batch})
 # Test
 input = [sen.split()[:2] for sen in sentences]
 print([sen.split()[:2] for sen in sentences], '->', [number_dict[n] for n in predict[0]])
+
+
+
+# write graph to file for show 
+logs_path = "/tmp/tensorflow_logs/1-1-graph"
+summary_writer = tf.summary.FileWriter(
+        logs_path, graph=tf.get_default_graph())
+
+
+print("Run the command line:\n"
+        "--> tensorboard --logdir=/tmp/tensorflow_logs/1-1"
+        "\nThen open http://0.0.0.0:6006/ into your web browser")
+
+
+
