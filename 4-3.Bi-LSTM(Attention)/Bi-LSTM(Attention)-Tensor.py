@@ -1,13 +1,12 @@
 """
   code by yinshuai:  Bi-LSTM(with attention)
   Semantic classify
-  Reference : https://github.com/prakashpandey9/Text-Classification-Pytorch/blob/master/models/LSTM_Attn.py
 """
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf
 import sys 
-sess = tf.Session()  # ys 
+sess = tf.Session()  #  
 
 tf.reset_default_graph()
 
@@ -115,12 +114,6 @@ with tf.Session() as sess:
     # Test
     test_text = 'sorry hate you'
     tests = [np.asarray([word_dict[n] for n in test_text.split()])]
-
-
-    # ys: start debug 
-
-    sys.exit(0)
-    #ys : end debug 
 
 
     predict = sess.run([predictions], feed_dict={X: tests})

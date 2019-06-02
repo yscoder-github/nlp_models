@@ -6,9 +6,6 @@ __author__ = 'yscoder@foxmail.com'
 
 
 def layer_norm(inputs, epsilon=1e-8):
-    """
-    层正则化,以避免出现梯度爆炸或者弥散
-    """
     mean, variance = tf.nn.moments(inputs, [-1], keep_dims=True)
     normalized = (inputs - mean) / (tf.sqrt(variance + epsilon))
 
@@ -27,7 +24,7 @@ def embed_seq(inputs, vocab_size=None, embed_dim=None, zero_pad=False, scale=Fal
     :param vocab_size:  词汇表的大小
     :param embed_dim:  嵌入后的维度大小
     :param zero_pad:   True:使用0做padding,反之则相反
-    :param scale: True: 需要缩放，反之xxxx
+    :param scale: True: 放大? 
     :return:
     """
     lookup_table = tf.get_variable('lookup_table', dtype=tf.float32, shape=[vocab_size, embed_dim])
@@ -113,7 +110,6 @@ def pointwise_feedforward(inputs, num_units=[None, None], activation=None):
 
 def learned_position_encoding(inputs, mask, embed_dim):
     """
-    位置嵌入
     :param inputs:
     :param mask:
     :param embed_dim:
@@ -129,7 +125,7 @@ def learned_position_encoding(inputs, mask, embed_dim):
 
 def sinusoidal_position_encoding(inputs, mask, num_units):
     """
-    @author: yinshuai sinusoidal 正弦曲线
+    @author: yinshuai sinusoidal 
     :param inputs:
     :param mask:
     :param num_units:
