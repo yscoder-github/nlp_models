@@ -1,7 +1,7 @@
 # encoding=utf-8
 
 """
-基于命令行的在线预测方法
+基于命令行的在线预测方法  殷帅
 @Author: Macan (ma_cancan@163.com) 
 """
 
