@@ -1,5 +1,5 @@
 '''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
+ Predict Next Step 
 '''
 import numpy as np
 import torch
@@ -17,7 +17,7 @@ word_dict = {w: i for i, w in enumerate(word_list)}
 number_dict = {i: w for i, w in enumerate(word_list)}
 n_class = len(word_dict)
 
-# TextRNN Parameter
+# TextRNN Parameter 
 batch_size = len(sentences)
 n_step = 2  # number of cells(= number of Step)
 n_hidden = 5  # number of hidden units in one cell

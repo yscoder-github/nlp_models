@@ -1,5 +1,5 @@
 '''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
+Autocomplete
 '''
 import numpy as np
 import torch

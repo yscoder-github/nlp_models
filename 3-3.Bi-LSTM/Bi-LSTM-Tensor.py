@@ -15,7 +15,7 @@ sentence = (
 word_dict = {w: i for i, w in enumerate(list(set(sentence.split())))}
 number_dict = {i: w for i, w in enumerate(list(set(sentence.split())))}
 n_class = len(word_dict)
-n_step = len(sentence.split())  # 注意这个地方
+n_step = len(sentence.split())  
 n_hidden = 5  # hidden size
 
 

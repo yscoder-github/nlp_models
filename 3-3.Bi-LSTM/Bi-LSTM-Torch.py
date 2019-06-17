@@ -1,5 +1,5 @@
 '''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
+    Predict Next Word in Long Sentence
 '''
 import numpy as np
 import torch
@@ -11,9 +11,9 @@ import torch.nn.functional as F
 dtype = torch.FloatTensor
 
 sentence = (
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit '
-    'sed do eiusmod tempor incididunt ut labore et dolore magna '
-    'aliqua Ut enim ad minim veniam quis nostrud exercitation'
+    'we do not want to give up it'
+    ' we finally find it is too difficult to overcome'
+    ' we all believe in it that hope is the key to success'
 )
 
 word_dict = {w: i for i, w in enumerate(list(set(sentence.split())))}
@@ -33,6 +33,8 @@ def make_batch(sentence):
         target = word_dict[words[i + 1]]
         input_batch.append(np.eye(n_class)[input])
         target_batch.append(target)
+        
+
 
     return Variable(torch.Tensor(input_batch)), Variable(torch.LongTensor(target_batch))
 
@@ -47,15 +49,17 @@ class BiLSTM(nn.Module):
     def forward(self, X):
         input = X.transpose(0, 1)  # input : [n_step, batch_size, n_class]
 
-        hidden_state = Variable(torch.zeros(1*2, len(X), n_hidden))   # [num_layers(=1) * num_directions(=1), batch_size, n_hidden]
-        cell_state = Variable(torch.zeros(1*2, len(X), n_hidden))     # [num_layers(=1) * num_directions(=1), batch_size, n_hidden]
+        hidden_state = Variable(torch.zeros(1 * 2, len(X), n_hidden))   # [num_layers(=1) * num_directions(=1), batch_size, n_hidden]
+        cell_state = Variable(torch.zeros(1 * 2, len(X), n_hidden))     # [num_layers(=1) * num_directions(=1), batch_size, n_hidden]
 
         outputs, (_, _) = self.lstm(input, (hidden_state, cell_state))
         outputs = outputs[-1]  # [batch_size, n_hidden]
         model = torch.mm(outputs, self.W) + self.b  # model : [batch_size, n_class]
         return model
 
-input_batch, target_batch = make_batch(sentence)
+input_batch, target_batch = make_batch(sentence) # input_batch: [batch_size, n_step, n_class]  target_batch:[batch_size]
+
+
 
 model = BiLSTM()
 
@@ -63,7 +67,7 @@ criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 # Training
-for epoch in range(10000):
+for epoch in range(1000):
     optimizer.zero_grad()
     output = model(input_batch)
     loss = criterion(output, target_batch)

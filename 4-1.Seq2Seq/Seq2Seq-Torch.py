@@ -1,4 +1,6 @@
-# code by Tae Hwan Jung(Jeff Jung) @graykode
+'''
+Change Word         
+'''
 import numpy as np
 import torch
 import torch.nn as nn
@@ -11,6 +13,8 @@ dtype = torch.FloatTensor
 
 char_arr = [c for c in 'SEPabcdefghijklmnopqrstuvwxyz']
 num_dic = {n: i for i, n in enumerate(char_arr)}
+
+
 
 seq_data = [['man', 'women'], ['black', 'white'], ['king', 'queen'], ['girl', 'boy'], ['up', 'down'], ['high', 'low']]
 
@@ -60,6 +64,8 @@ class Seq2Seq(nn.Module):
         return model
 
 
+#input_batch: [batch_size, hidden_size, n_class]
+#output_batch: []
 input_batch, output_batch, target_batch = make_batch(seq_data)
 
 model = Seq2Seq()
