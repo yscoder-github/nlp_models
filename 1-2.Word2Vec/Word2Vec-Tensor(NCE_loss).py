@@ -1,7 +1,3 @@
-'''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
-  reference : https://github.com/golbin/TensorFlow-Tutorials/blob/master/04%20-%20Neural%20Network%20Basic/03%20-%20Word2Vec.py
-'''
 import matplotlib.pyplot as plt
 import numpy as np
 import tensorflow as tf

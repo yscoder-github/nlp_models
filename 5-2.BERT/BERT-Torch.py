@@ -1,8 +1,3 @@
-'''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
-  Reference : https://github.com/jadore801120/attention-is-all-you-need-pytorch
-              https://github.com/JayParks/transformer, https://github.com/dhlee347/pytorchic-bert
-'''
 import math
 import re
 from random import *

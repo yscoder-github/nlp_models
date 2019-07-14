@@ -1,16 +1,3 @@
-"""
-  code by YInshuai machine translate using attention model
-
-
-#### 5. Model based on Transformer
-
-- 5-1.  [The Transformer](https://github.com/graykode/nlp-tutorial/tree/master/5-1.Transformer) - **Translate**
-  - Paper - [Attention Is All You Need(2017)](https://arxiv.org/abs/1810.04805)
-  - Colab - [Transformer_Torch.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer_Torch.ipynb), [Transformer(Greedy_decoder)_Torch.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/5-1.Transformer/Transformer(Greedy_decoder)_Torch.ipynb)
-
-  Reference : https://github.com/jadore801120/attention-is-all-you-need-pytorch
-              https://github.com/JayParks/transformer
-"""
 import matplotlib.pyplot as plt
 import numpy as np
 import torch

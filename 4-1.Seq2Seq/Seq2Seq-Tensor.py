@@ -1,14 +1,3 @@
-"""
-code by yinshuai
-#### 4. Attention Mechanism
-
-- 4-1. [Seq2Seq](https://github.com/graykode/nlp-tutorial/tree/master/4-1.Seq2Seq) - **Change Word**
-  - Paper - [Learning Phrase Representations using RNN Encoder–Decoder
-    for Statistical Machine Translation(2014)](https://arxiv.org/pdf/1406.1078.pdf)
-  - Colab - [Seq2Seq_Tensor.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-1.Seq2Seq/Seq2Seq_Tensor.ipynb),
-   [Seq2Seq_Torch.ipynb](https://colab.research.google.com/github/graykode/nlp-tutorial/blob/master/4-1.Seq2Seq/Seq2Seq_Torch.ipynb)
--
-"""
 import numpy as np
 import tensorflow as tf
 

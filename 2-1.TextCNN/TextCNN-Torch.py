@@ -1,6 +1,3 @@
-"""
-  code by Tae Hwan Jung(Jeff Jung) @graykode
-"""
 import numpy as np
 import torch
 import torch.nn as nn

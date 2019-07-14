@@ -1,5 +1,4 @@
 '''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
   Reference : https://github.com/prakashpandey9/Text-Classification-Pytorch/blob/master/models/LSTM_Attn.py
 '''
 import matplotlib.pyplot as plt

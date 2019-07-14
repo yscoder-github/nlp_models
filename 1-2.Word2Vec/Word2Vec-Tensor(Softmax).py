@@ -1,5 +1,4 @@
 """
-@author: yinshuai
 该例子比较简单,因为所使用的输入样本集的长度都很短,所以在训练的时候的配置如下:
 
 skip_window_size: 2
@@ -7,9 +6,6 @@ batch_size: 20
 train_sample:
     input: target word (当前窗口的中心词) 每个单词都会作为中心词
     output: word in windows (i - 1) & (i + 1),这里只选择窗口中的一个单词作为训练输出
-
-
-
 """
 import matplotlib.pyplot as plt
 import numpy as np

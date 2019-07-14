@@ -1,4 +1,7 @@
-# code by Tae Hwan Jung @graykode
+"""
+1-1.Predict Next Word 
+Module: Basic Embedding Model 
+"""
 import numpy as np
 import torch
 import torch.nn as nn
@@ -19,7 +22,6 @@ n_class = len(word_dict)  # number of Vocabulary
 n_step = 2  # n-1
 n_hidden = 2  # h
 
-
 def make_batch(sentences):
     input_batch = []
     target_batch = []
@@ -33,7 +35,6 @@ def make_batch(sentences):
         target_batch.append(target)
 
     return input_batch, target_batch
-
 
 # Model
 class NNLM(nn.Module):

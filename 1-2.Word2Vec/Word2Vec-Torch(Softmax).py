@@ -1,6 +1,3 @@
-'''
-  code by Tae Hwan Jung(Jeff Jung) @graykode
-'''
 import matplotlib.pyplot as plt
 import numpy as np
 import torch

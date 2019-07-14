@@ -1,5 +1,4 @@
-"""
-  code by yinshuai:  Bi-LSTM(with attention)
+"""Bi-LSTM(with attention)
   Semantic classify
 """
 import matplotlib.pyplot as plt

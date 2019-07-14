@@ -1,4 +1,3 @@
-# code by Tae Hwan Jung(Jeff Jung) @graykode
 # Reference : https://github.com/hunkim/PyTorchZeroToAll/blob/master/14_2_seq2seq_att.py
 import matplotlib.pyplot as plt
 import numpy as np
