@@ -6,13 +6,6 @@
 
 This [nlp-models](https://github.com/yscoder-github/nlp-models) project is a tutorial for who is studying NLP(Natural Language Processing) using **TensorFlow** , **Pytorch** and **keras** , most of the models in NLP were implemented with less than **200 lines** of code. 
 
-To do: 
-- Add some new  model 
-- Add keras version 
-- Adding more English annotations
-- Enriching training examples
-- Adding larger data sets to measure model effectiveness
-
 
 
 ## Catalog
@@ -94,9 +87,15 @@ To do:
 
 
 
-###  
-Plan to add Keras Version   
+### To do: 
+- Add some new  model 
+- Add keras version 
+- Adding more English annotations
+- Enriching training examples
+- Adding larger data sets to measure model effectiveness
+
 
 
 ---- 
 #####   Contact Email : yscoder@foxmail.com 
+
