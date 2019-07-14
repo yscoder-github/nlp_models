@@ -79,7 +79,7 @@ This [nlp-models](https://github.com/yscoder-github/nlp-models) project is a tut
 
 
 
-## Dependencies
+### Dependencies
 
 - Python 3.5+
 - Tensorflow 1.12.0+
