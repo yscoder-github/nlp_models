@@ -53,3 +53,5 @@ Temporary Items
 ./data
 *.xml
 *.pyc
+.vscode
+.idea 
